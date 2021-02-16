@@ -32,7 +32,7 @@ const deleteTodo = (event) => {
   if (todoItem.classList[0] === 'trash-btn') {
     const todo = todoItem.parentElement;
     todo.classList.add('fall');
-    //this waits until the transition is through then executes the function (todo.remove())
+
     todo.addEventListener('transitionend', function () {
       todo.remove();
     });
